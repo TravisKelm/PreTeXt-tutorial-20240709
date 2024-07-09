@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch1-ThingsToKnow" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Things You Should Know</title>
+
+  <introduction>
+    <p>This chapter summarizes results, mostly without proof, which we consider necessary background for the material presented in the book. Please review this chapter and use it in the spirit it was intended: as a refresher for the things you know, and as a quick guide to learn the things you haven't yet seen but will need to succeed.</p>
+    <blockquote>
+        <title>Lorem ipsum</title>
+        <p>
+          <q>Mathematical discoveries, small or great are never born of spontaneous generation. They always presuppose a soil seeded with preliminary knowledge and well prepared by labour, both conscious and subconscious.</q>
+        </p>
+        <attribution>Jules Henri Poincare (1854-1912)</attribution>
+      </blockquote>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec1_1-Sets.ptx" />
+
+</chapter>

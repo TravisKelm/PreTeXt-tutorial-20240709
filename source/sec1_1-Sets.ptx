@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec1_1-Sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Sets</title>
+
+<p>We all have an intuitive idea of what a set is. Still, the concept of a set has given headaches to several mathematicians throughout the history of the subject. This is perhaps because the intuitive definition of a set is too simple, yet easily misunderstood and misused. Consider for instance the following set <m>A</m>:</p>
+
+<me>A = \{ x; \ x\notin A\}</me>
+
+<p>This set gives rise to what is called Russell's Paradox, named after <idx>Russell, Bertrand</idx> Bertrand Russell (1872-1970), a Welsh mathematician and philosopher. It is easy to see that if an element belongs to <m>A</m> then it cannot belong to <m>A</m>, and if an element does not belong to <m>A</m>, then it must be in <m>A</m>. Quite a conundrum!</p>
+
+<p>Sets like these called for a formal development of set theory. The achievement of this task is mostly attributed to  <idx>Cantor, Georg</idx> Georg Cantor (1845-1918), and it is said to have driven Cantor certifiably insane. Many of the deep problems and questions of set theory are beyond the scope of this course, although a few of them are disturbingly `obvious'. Let us say for example that we want to choose an even number larger than the number of atoms in the world. This is something we assume feasible but... how would you find such a number? In order to deal with such questions the ability to choose an arbitrary element with a certain characteristic out of a set must be assumed. We use this assumption whenever we say `let', `choose', etc. in constructing a mathematical argument.</p>
+
+<p>The assumption mentioned above is called <em>the axiom of choice</em>, and is an essential building block of most of modern mathematics. This axiom is equivalent, or closely related, to many other important assumptions we make every day when doing mathematics. We list here some of the more commonly used ones: Trichotomy (a real number is either positive, negative or zero), every vector space has a basis, the well-ordering principle (Axiom \ref{WOPaxiom} on page \pageref{WOPaxiom}), the Cartesian product (see Definition \ref{cartesianproddef}) of two non-empty sets is non-empty, etc.</p> 
+
+<p>For this course we will not need much beyond what the following simple definition of a set will allow us to do.</p>
+
+<definition xml:id="def-Set"> <idx>Sets</idx>
+    <statement>
+    <p>
+    A <term>set</term> is a non-ordered collection of items. The <term>cardinality</term> of a set <m>A</m>, denoted <m>|A|</m>, is the number of elements in <m>A</m> (if <m>A</m> has finitely many elements) or <m>\infty</m> if the set contains infinitely many elements.
+    </p>
+    </statement>
+</definition>
+
+<definition xml:id="def-SetDefinitions">
+    <statement>
+    <p>
+    <ol>
+        <li>A <term>subset</term> of a set <m>A</m> is a set which only contains elements that also belong to <m>A</m>.  A subset of <m>A</m> that is not equal to <m>A</m> is called a <term>proper subset</term> of <m>A</m>.</li>
+        <li><m>A\cup B</m>, the <term>union</term>> of <m>A</m> and <m>B</m>, is the set that contains all the elements belonging to <m>A</m> or <m>B</m> (or both).
+        </li>
+        <li><m>A\cap B</m>, the <term>intersection</term> of <m>A</m> and <m>B</m>, is the set that contains all the elements belonging to both <m>A</m> and <m>B</m>.
+        </li>
+        <li><m>A - B</m>, the <term>set difference</term> of <m>A</m> by <m>B</m>, is the set that contains all the elements of <m>A</m> that do not belong to <m>B</m>.  This set is sometimes denoted by <m>A \setminus B</m>.
+        </li>
+        <li>The <term>Cartesian product</term> of <m>A</m> and <m>B</m>, denoted <m>A\times B</m>, is the set
+            <me>
+            A\times B = \{ (a,b); \ a\in A, \ b\in B \}.
+            </me>
+        </li>
+    </ol>       
+    </p>
+    </statement>
+</definition>
+
+<remark>
+    <p>
+        The union and intersection of <m>A</m> and <m>B</m> can also be presented as <idx>Sets</idx>
+        <me>
+        A\cup B = \{ x ; \ x\in A \ \text{or} \ x\in B \}
+        </me>
+        <me>
+        A\cap B = \{ x ; \ x\in A \ \text{and} \ x\in B \}
+        </me>
+    </p>
+  </remark>
+
+<p>
+    Understanding how elements of sets interact, and how they can be grouped, classified, and structured, is the foundation of mathematics --- and algebra, in particular.  To achieve this understanding we use relations and, in particular, functions.
+</p>
+
+<p>
+    Although you might be used to thinking that a function <idx>Functions</idx> is only something that looks like <m>f(x) = \sin(x)</m> or <m>g(x) = e^x + x^2-3</m>, you need to recall that a function is just a special type of a relation, and that a relation is nothing but a subset of a Cartesian product of two sets. We formalize these ideas in the following definition.
+</p>
+
+<definition xml:id="def-Relation">
+    <statement>
+    <p>
+    Let <m>A</m> and <m>B</m> be non-empty sets.
+    <ol>
+        <li>A <term>relation</term> <m>R</m> from <m>A</m> to <m>B</m> is a subset of <m>A\times B</m>.  By convention, the statement that <m>(a,b) \in R</m> is often written as <m>R(a)=b</m>.  We say that <m>b</m> is an <term>image</term> of <m>a</m> under <m>R</m>, or that <m>a</m> is <term>mapped</term>, or <term>assigned</term>, to <m>b</m> under <m>R</m>.
+        </li>
+        <li>If <m>F</m> is a relation from <m>A</m> to <m>B</m> such that every element in <m>A</m> is assigned to exactly one image in <m>B</m>, then <m>F</m> is said to be a <term>function</term>, and we write <m>F \colon A \to B</m>.
+        </li>
+        <li>If <m>A = B</m>, so that <m>R</m> is a relation from <m>A</m> to <m>A</m>, we say that <m>R</m> is a <term>relation on <m>A</m></term>.  In this case, if <m>x</m>, <m>y \in A</m> and <m>(x,y) \in R</m> we may write <m>aRb</m>, or <m>a \sim b</m> when <m>R</m> is understood.
+        </li>
+    </ol>     
+    </p>
+    </statement>
+</definition>
+
+<p>
+    In the particular case of a relation <idx>Relations</idx> from <m>A</m> to <m>A</m>, relations might have special properties.
+</p>
+
+<definition xml:id="def-EqivalenceRelation">
+    <statement>
+    <p>
+    Let <m>\sim</m> be a relation on a set <m>A</m>.
+    <ol>
+        <li>We say <m>\sim</m> is <term>reflexive</term>if <m>a\sim a</m> for all <m>a\in A</m>;
+        </li>
+
+        <li><m>\sim</m> is  <term>symmetric</term>if <m>a\sim b</m> necessarily implies that <m>b\sim a</m>;
+        </li>
+
+        <li><m>\sim</m> is  <term>transitive</term>if whenever <m>a\sim b</m> and <m>b\sim c</m>, it follows that that <m>a\sim c</m>.
+        </li>
+    </ol>
+    If a relation <m>\sim</m> satisfies all three properties listed above, then <m>\sim</m> is said to be an <term>equivalence relation</term>  <idx>Equivalence Relations</idx>  on <m>A</m>.   
+    </p>
+    </statement>
+</definition>
+
+</section>
