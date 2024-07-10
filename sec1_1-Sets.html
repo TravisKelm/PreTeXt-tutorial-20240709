@@ -127,7 +127,7 @@ window.MathJax = {
 </h2>
 <div class="para" id="sec1_1-Sets-2">We all have an intuitive idea of what a set is. Still, the concept of a set has given headaches to several mathematicians throughout the history of the subject. This is perhaps because the intuitive definition of a set is too simple, yet easily misunderstood and misused. Consider for instance the following set <span class="process-math">\(A\text{:}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-number-of-equiv-classes-parta.html ./knowl/xref/eqclintro.html ./knowl/xref/eqclintro-modulo.html ./knowl/xref/ex-number-of-equiv-classes.html ./knowl/xref/ex-number-of-equiv-classes-partc.html">
 \begin{equation*}
 A = \{ x; \ x\notin A\}
 \end{equation*}
@@ -145,7 +145,7 @@ A = \{ x; \ x\notin A\}
 <li id="def-SetDefinitions-1-1-1-1"><div class="para" id="p-derived-def-SetDefinitions-1-1-1-1">A <dfn class="terminology">subset</dfn> of a set <span class="process-math">\(A\)</span> is a set which only contains elements that also belong to <span class="process-math">\(A\text{.}\)</span>  A subset of <span class="process-math">\(A\)</span> that is not equal to <span class="process-math">\(A\)</span> is called a <dfn class="terminology">proper subset</dfn> of <span class="process-math">\(A\text{.}\)</span>
 </div></li>
 <li id="def-SetDefinitions-1-1-1-2"><div class="para" id="p-derived-def-SetDefinitions-1-1-1-2">
-<span class="process-math">\(A\cup B\text{,}\)</span> the <dfn class="terminology">union</dfn>&gt; of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> is the set that contains all the elements belonging to <span class="process-math">\(A\)</span> or <span class="process-math">\(B\)</span> (or both).</div></li>
+<span class="process-math">\(A\cup B\text{,}\)</span> the <dfn class="terminology">union</dfn> of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> is the set that contains all the elements belonging to <span class="process-math">\(A\)</span> or <span class="process-math">\(B\)</span> (or both).</div></li>
 <li id="def-SetDefinitions-1-1-1-3"><div class="para" id="p-derived-def-SetDefinitions-1-1-1-3">
 <span class="process-math">\(A\cap B\text{,}\)</span> the <dfn class="terminology">intersection</dfn> of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> is the set that contains all the elements belonging to both <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span>
 </div></li>
@@ -173,7 +173,7 @@ A\cup B = \{ x ; \ x\in A \ \text{or} \ x\in B \}
 A\cap B = \{ x ; \ x\in A \ \text{and} \ x\in B \}
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec1_1-Sets-11">Understanding how elements of sets interact, and how they can be grouped, classified, and structured, is the foundation of mathematics --- and algebra, in particular.  To achieve this understanding we use relations and, in particular, functions.</div>
+</div></article><div class="para" id="sec1_1-Sets-11">Understanding how elements of sets interact, and how they can be grouped, classified, and structured, is the foundation of mathematics and algebra, in particular.  To achieve this understanding we use relations and, in particular, functions.</div>
 <div class="para" id="sec1_1-Sets-12">Although you might be used to thinking that a function  is only something that looks like <span class="process-math">\(f(x) = \sin(x)\)</span> or <span class="process-math">\(g(x) = e^x + x^2-3\text{,}\)</span> you need to recall that a function is just a special type of a relation, and that a relation is nothing but a subset of a Cartesian product of two sets. We formalize these ideas in the following definition.</div>
 <article class="definition definition-like" id="def-Relation"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span>
@@ -195,18 +195,132 @@ A\cap B = \{ x ; \ x\in A \ \text{and} \ x\in B \}
 <div class="para">Let <span class="process-math">\(\sim\)</span> be a relation on a set <span class="process-math">\(A\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="def-EqivalenceRelation-1-1-3-1"><div class="para" id="p-derived-def-EqivalenceRelation-1-1-3-1">We say <span class="process-math">\(\sim\)</span> is <dfn class="terminology">reflexive</dfn>if <span class="process-math">\(a\sim a\)</span> for all <span class="process-math">\(a\in A\text{;}\)</span>
+<li id="def-EqivalenceRelation-1-1-3-1"><div class="para" id="p-derived-def-EqivalenceRelation-1-1-3-1">We say <span class="process-math">\(\sim\)</span> is <dfn class="terminology">reflexive</dfn> if <span class="process-math">\(a\sim a\)</span> for all <span class="process-math">\(a\in A\text{;}\)</span>
 </div></li>
 <li id="def-EqivalenceRelation-1-1-3-2"><div class="para" id="p-derived-def-EqivalenceRelation-1-1-3-2">
-<span class="process-math">\(\sim\)</span> is  <dfn class="terminology">symmetric</dfn>if <span class="process-math">\(a\sim b\)</span> necessarily implies that <span class="process-math">\(b\sim a\text{;}\)</span>
+<span class="process-math">\(\sim\)</span> is  <dfn class="terminology">symmetric</dfn> if <span class="process-math">\(a\sim b\)</span> necessarily implies that <span class="process-math">\(b\sim a\text{;}\)</span>
 </div></li>
 <li id="def-EqivalenceRelation-1-1-3-3"><div class="para" id="p-derived-def-EqivalenceRelation-1-1-3-3">
-<span class="process-math">\(\sim\)</span> is  <dfn class="terminology">transitive</dfn>if whenever <span class="process-math">\(a\sim b\)</span> and <span class="process-math">\(b\sim c\text{,}\)</span> it follows that that <span class="process-math">\(a\sim c\text{.}\)</span>
+<span class="process-math">\(\sim\)</span> is  <dfn class="terminology">transitive</dfn> if whenever <span class="process-math">\(a\sim b\)</span> and <span class="process-math">\(b\sim c\text{,}\)</span> it follows that that <span class="process-math">\(a\sim c\text{.}\)</span>
 </div></li>
 </ol>
 <div class="para">If a relation <span class="process-math">\(\sim\)</span> satisfies all three properties listed above, then <span class="process-math">\(\sim\)</span> is said to be an <dfn class="terminology">equivalence relation</dfn>    on <span class="process-math">\(A\text{.}\)</span>
 </div>
-</div></article></section></div>
+</div></article><details id="eqclintro" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Some Equivalence Relations Exercises.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="eqclintro-2"><div class="para" id="eqclintro-2-1">Show that the following relations   are equivalence relations on the indicated sets:</div></div>
+<article class="task exercise-like" id="eqclintro-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="eqclintro-3-1-1">
+<span class="process-math">\(\sim\)</span> defined on <span class="process-math">\(\Z\)</span> by <span class="process-math">\(a\sim b\)</span> if and only if, for a fixed <span class="process-math">\(n\in \Z\text{,}\)</span> <span class="process-math">\(\gcd(a,n) =\gcd(b,n)\)</span> (see Definition ...).</div></article><article class="task exercise-like" id="eqclintro-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="eqclintro-4-1-1">
+<span class="process-math">\(\sim\)</span> defined on the set of all finite sets by <span class="process-math">\(A\sim B\)</span> if and only if there exists a  \index{Equivalence Relations}  bijective function <span class="process-math">\(f:A\rightarrow B\)</span>
+</div></article><article class="task exercise-like" id="eqclintro-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="eqclintro-5-1-1">defined on <span class="process-math">\(\R^3\)</span> by <span class="process-math">\(P \sim Q\)</span> if and only if  <span class="process-math">\(P-Q\)</span> is orthogonal to the vector <span class="process-math">\((1,1,1)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="eqclintro-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="eqclintro-6-1-1">
+<span class="process-math">\(\sim\)</span> defined on <span class="process-math">\(\R\)</span> by <span class="process-math">\(a\sim b\)</span> if and only if <span class="process-math">\(|a| =|b|\text{.}\)</span>
+</div></article><article class="task exercise-like" id="eqclintro-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="eqclintro-7-1-1">
+<span class="process-math">\(\sim\)</span> defined on <span class="process-math">\(\Z\)</span> by <span class="process-math">\(a\sim b\)</span> if and only if both are even or both are odd.</div></article><article class="task exercise-like" id="eqclintro-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="eqclintro-8-1-1">
+<span class="process-math">\(\sim\)</span> defined on the set of all differentiable functions <span class="process-math">\(\R \rightarrow \R\text{,}\)</span> where <span class="process-math">\(f\sim g\)</span> if and only if <span class="process-math">\(f'(x) =g'(x)\)</span> for all <span class="process-math">\(x\in \R\text{.}\)</span>
+</div></article><article class="task exercise-like" id="eqclintro-modulo"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="eqclintro-modulo-1-1">
+<span class="process-math">\(\sim\)</span> defined on <span class="process-math">\(\Z\)</span> by <span class="process-math">\(a\sim b\)</span> if and only if, for a fixed integer <span class="process-math">\(n&gt;1\text{,}\)</span> <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have the same remainder when divided by <span class="process-math">\(n\text{.}\)</span>
+</div></article><article class="task exercise-like" id="eqclintro-10"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="para" id="eqclintro-10-1-1">
+<span class="process-math">\(\sim\)</span> defined on the set of all differentiable functions <span class="process-math">\(\R \rightarrow \R\text{,}\)</span> where <span class="process-math">\(f\sim g\)</span> if and only if <span class="process-math">\(f'(x) =g'(x)\)</span> for all <span class="process-math">\(x\in \R\text{.}\)</span>
+</div></article><article class="task exercise-like" id="eqclintro-11"><h4 class="heading"><span class="codenumber">(i)</span></h4>
+<div class="para" id="eqclintro-11-1-1">
+<span class="process-math">\(\sim\)</span> defined on the set of all triangles by <span class="process-math">\(\triangle ABC \sim \triangle DEF\)</span> if and only if the two triangles are congruent. Would this relation still be an equivalence relation if we replaced `congruent’ by `similar’ ?</div></article><article class="task exercise-like" id="eqclintro-12"><h4 class="heading"><span class="codenumber">(j)</span></h4>
+<div class="para" id="eqclintro-12-1-1">
+<span class="process-math">\(\sim\)</span> defined on the set of all functions <span class="process-math">\(f:A\rightarrow B\)</span> by <span class="process-math">\(f\sim g\)</span> if and only if <span class="process-math">\(f(a)=g(a)\)</span> for some <em class="emphasis">fixed</em> <span class="process-math">\(a\in A\text{.}\)</span>
+</div></article></article></details><div class="para" id="sec1_1-Sets-17"><details id="exprepermutationprodcycles" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalence Relation Example.</span>
+</h3></summary><article class="example example-like knowl__content"> <div class="para logical" id="exprepermutationprodcycles-2">
+<div class="para">Let <span class="process-math">\(A\)</span> be a set and <span class="process-math">\(f \colon A \rightarrow A\)</span> a <em class="emphasis">fixed</em> bijective function.  We set</div>
+<ol class="decimal">
+<li id="exprepermutationprodcycles-2-4-1"><div class="para" id="exprepermutationprodcycles-2-4-1-1"><span class="process-math">\(\displaystyle f^0=id\)</span></div></li>
+<li id="exprepermutationprodcycles-2-4-2"><div class="para" id="exprepermutationprodcycles-2-4-2-1">
+<span class="process-math">\(f^n = \underbrace{f\circ f\circ \cdots \circ f}_{n \,\mbox {times}}\text{,}\)</span> and</div></li>
+<li id="exprepermutationprodcycles-2-4-3"><div class="para" id="exprepermutationprodcycles-2-4-3-1">
+<span class="process-math">\(f^{-n} = (f^n)^{-1}\text{,}\)</span> for all <span class="process-math">\(n\in \N\text{,}\)</span> where <span class="process-math">\((f^n)^{-1}\)</span> is the inverse function of<span class="process-math">\(f^n\text{.}\)</span>
+</div></li>
+</ol>
+</div> <div class="para" id="exprepermutationprodcycles-3">Consider the relation <span class="process-math">\(\sim\)</span>on <span class="process-math">\(A\)</span>by <span class="process-math">\(a\sim b\)</span>if and only if <span class="process-math">\(f^k(a) =b\text{,}\)</span> for some <span class="process-math">\(k\in \Z\text{.}\)</span> We next show that <span class="process-math">\(\sim\)</span> is an equivalence relation.</div> <div class="para" id="exprepermutationprodcycles-4">Let <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z \in A\text{.}\)</span>
+</div> <dl class="description-list">
+<dt id="exprepermutationprodcycles-5-1">
+<span class="process-math">\(\sim\)</span> is reflexive:</dt>
+<dd><div class="para" id="exprepermutationprodcycles-5-1-2">In order to check reflexivity we need to prove that<span class="process-math">\(x\sim x\text{.}\)</span> That is, we need to find a power<span class="process-math">\(k\)</span> of<span class="process-math">\(f\)</span> such that<span class="process-math">\(f^k(x)=x\text{,}\)</span> but since<span class="process-math">\(f^0\)</span> is the identity function then<span class="process-math">\(f^0(x) = x\text{.}\)</span> It follows that<span class="process-math">\(x \sim x\text{.}\)</span>
+</div></dd>
+<dt id="exprepermutationprodcycles-5-2">
+<span class="process-math">\(\sim\)</span> is symmetric:</dt>
+<dd><div class="para" id="exprepermutationprodcycles-5-2-2">Suppose<span class="process-math">\(x \sim y\text{.}\)</span>  This means that we know that there exists <span class="process-math">\(k \in \Z\)</span> such that <span class="process-math">\(f^k(x) = y\)</span> (definition of the relation).  In order to show that<span class="process-math">\(y \sim x\)</span> we need to find a power of<span class="process-math">\(f\)</span> such<span class="process-math">\(f^r(y)=x\text{.}\)</span> Since<span class="process-math">\(f^k\)</span> sends <span class="process-math">\(x\)</span> to <span class="process-math">\(y\text{,}\)</span> then the inverse function of <span class="process-math">\(f^k\)</span> sends<span class="process-math">\(y\)</span> back to <span class="process-math">\(x\)</span> (the inverse function exists because <span class="process-math">\(f\)</span> is bijective, and thus any composition of<span class="process-math">\(f\)</span>’s is also bijective, in particular <span class="process-math">\(f^k\)</span>). It follows that<span class="process-math">\((f^k)^{-1}(y)=x\text{.}\)</span> But, according to the definition above <span class="process-math">\((f^k)^{-1} = f^{-k}\text{.}\)</span> It follows that <span class="process-math">\(f^{-k}(y) = x\text{.}\)</span> Since <span class="process-math">\(k\in \Z\)</span> then so is <span class="process-math">\(-k\text{,}\)</span> therefore <span class="process-math">\(y \sim x\text{.}\)</span>
+</div></dd>
+<dt id="exprepermutationprodcycles-5-3">
+<span class="process-math">\(\sim\)</span> is transitive:</dt>
+<dd><div class="para logical" id="exprepermutationprodcycles-5-3-2">
+<div class="para">Suppose <span class="process-math">\(x \sim y\)</span> and <span class="process-math">\(y \sim z\text{.}\)</span>  This means that there exist <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(l \in \Z\)</span> such that <span class="process-math">\(f^k(x) = y\)</span> and <span class="process-math">\(f^l(y) = z\text{.}\)</span>  Since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{l}f^{k} = \left( \underbrace{f\circ f\circ \cdots \circ f}_{l \,\mbox {times}} \right) \circ \left( \underbrace{f\circ f\circ \cdots \circ f}_{k \,\mbox {times}} \right) =  \underbrace{f\circ f\circ \cdots \circ f}_{k+l \,\mbox {times}}
+\end{equation*}
+</div>
+<div class="para">then <span class="process-math">\(f^{k+l}(x) = f^{l}f^{k}(x) = f^{l}\left( f^{k}(x) \right)=  f^{l}(y) = z\text{.}\)</span> Since <span class="process-math">\(k,l\in \Z\)</span> then <span class="process-math">\(k+l\in \Z\text{,}\)</span> and thus <span class="process-math">\(x \sim z\text{.}\)</span>
+</div>
+</div></dd>
+</dl></article></details></div>
+<article class="definition definition-like" id="def-EquivalenceClass"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="def-EquivalenceClass-1-1">
+<div class="para">Let <span class="process-math">\(R\)</span> be an equivalence relation on a set <span class="process-math">\(A\text{.}\)</span>  For a fixed <span class="process-math">\(x\in A\text{,}\)</span> we define the <em class="emphasis">(equivalence) class</em> of <span class="process-math">\(x\)</span> as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[x] =\{ b\in A ; \ xRb   \}
+\end{equation*}
+</div>
+</div></article><details id="ex-number-of-equiv-classes" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Counting Classes.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="ex-number-of-equiv-classes-2"><div class="para" id="ex-number-of-equiv-classes-2-1">Let <span class="process-math">\(\sim\)</span> be an equivalence relation on a set <span class="process-math">\(A\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="ex-number-of-equiv-classes-parta"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ex-number-of-equiv-classes-parta-1-1">Assume that <span class="process-math">\(|A|=n \lt \infty\)</span> and that every equivalence class under <span class="process-math">\(\sim\)</span> contains exactly <span class="process-math">\(k\)</span> elements. Prove that <span class="process-math">\(k \mid n\text{.}\)</span>
+</div></article><article class="task exercise-like" id="ex-number-of-equiv-classes-partb"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ex-number-of-equiv-classes-partb-1-1">How many equivalence classes are there in part (<a href="sec1_1-Sets.html#ex-number-of-equiv-classes-parta" class="xref" data-knowl="./knowl/xref/ex-number-of-equiv-classes-parta.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 1.1.9.a">Task 1.1.9.a</a>)?</div></article><article class="task exercise-like" id="ex-number-of-equiv-classes-partc"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="ex-number-of-equiv-classes-partc-1-1">
+<div class="para">Assume that <span class="process-math">\(A=\Z\)</span> and that <span class="process-math">\(\sim\)</span> is defined by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a\sim b  \text{ if and only if } a\equiv b \pmod n.
+\end{equation*}
+</div>
+<div class="para">Prove that if <span class="process-math">\(C_1\)</span> and <span class="process-math">\(C_2\)</span> are (any) two equivalence classes of <span class="process-math">\(\sim\)</span> then there is a bijective function <span class="process-math">\(f \colon C_1\rightarrow C_2\text{.}\)</span>
+</div>
+</div></article></article></details><div class="para logical" id="sec1_1-Sets-20">
+<div class="para">You may recognize the equivalence relation in Exercise <a href="sec1_1-Sets.html#eqclintro" class="xref" data-knowl="./knowl/xref/eqclintro.html" data-reveal-label="Reveal" data-close-label="Close" title="Checkpoint 1.1.6: Some Equivalence Relations Exercises">Checkpoint 1.1.6</a>, part <a href="sec1_1-Sets.html#eqclintro-modulo" class="xref" data-knowl="./knowl/xref/eqclintro-modulo.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 1.1.6.g">Task 1.1.6.g</a>, as congruence modulo <span class="process-math">\(n\text{.}\)</span>  (Compare Exercise <a href="sec1_1-Sets.html#ex-number-of-equiv-classes" class="xref" data-knowl="./knowl/xref/ex-number-of-equiv-classes.html" data-reveal-label="Reveal" data-close-label="Close" title="Checkpoint 1.1.9: Counting Classes">Checkpoint 1.1.9</a>  part <a href="sec1_1-Sets.html#ex-number-of-equiv-classes-partc" class="xref" data-knowl="./knowl/xref/ex-number-of-equiv-classes-partc.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 1.1.9.c">Task 1.1.9.c</a>). The equivalence classes in this case are often called <em class="emphasis">congruence classes</em>.  The congruence class of <span class="process-math">\(0\)</span> consists of all the multiples of <span class="process-math">\(n\text{,}\)</span> since</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqclintro.html ./knowl/xref/eqclintro-modulo.html ./knowl/xref/ex-number-of-equiv-classes.html ./knowl/xref/ex-number-of-equiv-classes-partc.html">
+\begin{equation*}
+[0] = \{ b \in \Z ; \ 0 \sim b \} = \{ b \in \Z ; \ b \equiv 0 \pmod{n} \} = \{ b \in \Z ; \ n \mid b \} = \{ \ldots, -3n, -2n, -n, 0, n, 2n, 3n, 4n, \ldots\}.
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="sec1_1-Sets-21">
+<div class="para">Similarly, check for yourself that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[1] = \{ b \in \Z ; \ b \equiv 1 \pmod{n} \} = \{ \ldots, -2n+1, -n+1, 1, n+1, 2n + 1, \ldots\}\text{.}
+\end{equation*}
+</div>
+<div class="para">The set of all distinct equivalence classes of <span class="process-math">\(\sim\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{ [0], [1], [2], \ldots, [n-1] \},
+\end{equation*}
+</div>
+<div class="para">which we usually call <span class="process-math">\(\Z_n\text{.}\)</span>  See subsection \ref{zee-n-subsection}. Note that every integer belongs to exactly one of these equivalence classes.  In other words, the equivalence classes of <span class="process-math">\(\sim\)</span> form a partition of <span class="process-math">\(\Z\text{.}\)</span>
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch1-ThingsToKnow.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
