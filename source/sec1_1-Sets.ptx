@@ -28,7 +28,7 @@
     <p>
     <ol>
         <li>A <term>subset</term> of a set <m>A</m> is a set which only contains elements that also belong to <m>A</m>.  A subset of <m>A</m> that is not equal to <m>A</m> is called a <term>proper subset</term> of <m>A</m>.</li>
-        <li><m>A\cup B</m>, the <term>union</term>> of <m>A</m> and <m>B</m>, is the set that contains all the elements belonging to <m>A</m> or <m>B</m> (or both).
+        <li><m>A\cup B</m>, the <term>union</term> of <m>A</m> and <m>B</m>, is the set that contains all the elements belonging to <m>A</m> or <m>B</m> (or both).
         </li>
         <li><m>A\cap B</m>, the <term>intersection</term> of <m>A</m> and <m>B</m>, is the set that contains all the elements belonging to both <m>A</m> and <m>B</m>.
         </li>
@@ -47,17 +47,13 @@
 <remark>
     <p>
         The union and intersection of <m>A</m> and <m>B</m> can also be presented as <idx>Sets</idx>
-        <me>
-        A\cup B = \{ x ; \ x\in A \ \text{or} \ x\in B \}
-        </me>
-        <me>
-        A\cap B = \{ x ; \ x\in A \ \text{and} \ x\in B \}
-        </me>
+        <me>A\cup B = \{ x ; \ x\in A \ \text{or} \ x\in B \}</me>
+        <me>A\cap B = \{ x ; \ x\in A \ \text{and} \ x\in B \}</me>
     </p>
   </remark>
 
 <p>
-    Understanding how elements of sets interact, and how they can be grouped, classified, and structured, is the foundation of mathematics --- and algebra, in particular.  To achieve this understanding we use relations and, in particular, functions.
+    Understanding how elements of sets interact, and how they can be grouped, classified, and structured, is the foundation of mathematics and algebra, in particular.  To achieve this understanding we use relations and, in particular, functions.
 </p>
 
 <p>
@@ -80,6 +76,7 @@
     </statement>
 </definition>
 
+
 <p>
     In the particular case of a relation <idx>Relations</idx> from <m>A</m> to <m>A</m>, relations might have special properties.
 </p>
@@ -89,18 +86,394 @@
     <p>
     Let <m>\sim</m> be a relation on a set <m>A</m>.
     <ol>
-        <li>We say <m>\sim</m> is <term>reflexive</term>if <m>a\sim a</m> for all <m>a\in A</m>;
+        <li>We say <m>\sim</m> is <term>reflexive</term> if <m>a\sim a</m> for all <m>a\in A</m>;
         </li>
 
-        <li><m>\sim</m> is  <term>symmetric</term>if <m>a\sim b</m> necessarily implies that <m>b\sim a</m>;
+        <li><m>\sim</m> is  <term>symmetric</term> if <m>a\sim b</m> necessarily implies that <m>b\sim a</m>;
         </li>
 
-        <li><m>\sim</m> is  <term>transitive</term>if whenever <m>a\sim b</m> and <m>b\sim c</m>, it follows that that <m>a\sim c</m>.
+        <li><m>\sim</m> is  <term>transitive</term> if whenever <m>a\sim b</m> and <m>b\sim c</m>, it follows that that <m>a\sim c</m>.
         </li>
     </ol>
     If a relation <m>\sim</m> satisfies all three properties listed above, then <m>\sim</m> is said to be an <term>equivalence relation</term>  <idx>Equivalence Relations</idx>  on <m>A</m>.   
     </p>
     </statement>
 </definition>
+
+<!-- 
+<remark>
+    <title>
+        Editor's Note
+    </title>
+    <p>
+        PreTeXt can handle exercises in many different ways and I wasn't sure which way was best in this situation so I used three different methods so you can decide what you think is best.
+    </p>    
+</remark>
+
+<aside>
+    <title>Exercises as a Group</title>
+    <p>
+        The following is a grouped set of exercises.  You can give a main title for the overall collection of exercises (in this case the name is "Some Exercises") and you can give a subtitle for each subgroup of exercises  (here there is only one subgroup and it is titled "Equivalence Relation Exercises")
+    </p> 
+</aside>
+
+<exercises xml:id="exercises-EquivalenceRelations">
+    <title>Some Exercises</title>
+    
+    
+    <exercisegroup>
+        <title>Equivalence Relation Exercises</title>
+              
+  
+      <introduction>
+          <p>
+              Show that the following relations  <idx>Relations</idx>  <idx>Equivalence Relations</idx> are equivalence relations on the indicated sets:
+          </p>
+      </introduction>
+  
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on <m>\R</m> by <m>a\sim b</m> if and only if <m>|a| =|b|</m>.
+              </p>
+          </statement>
+      </exercise>
+  
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if both are even or both are odd.
+              </p>
+          </statement>
+      </exercise>
+  
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if, for a fixed integer <m>n>1</m>, <m>a</m> and <m>b</m> have the same remainder when divided by <m>n</m>.
+              </p>
+          </statement>
+      </exercise>
+    
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on the set of all differentiable functions <m>\R \rightarrow \R</m>, where <m>f\sim g</m> if and only if <m>f'(x) =g'(x)</m> for all <m>x\in \R</m>.
+              </p>
+          </statement>
+      </exercise>
+  
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on the set of all functions <m>f:A\rightarrow B</m> by <m>f\sim g</m> if and only if <m>f(a)=g(a)</m> for some <em>fixed</em> <m>a\in A</m>.
+              </p>
+          </statement>
+      </exercise>
+  
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on the set of all triangles by <m>\triangle ABC \sim \triangle DEF</m> if and only if the two triangles are congruent. Would this relation still be an equivalence relation if we replaced `congruent' by `similar' ?
+              </p>
+          </statement>
+      </exercise>
+  
+      <exercise>
+          <statement>
+              <p>
+                  <m>\sim</m> defined on <m>\R^3</m> by <m>P \sim Q</m> if and only if  <m>P-Q</m> is orthogonal to the vector <m>(1,1,1)</m>.
+              </p>
+          </statement>
+      </exercise>
+  
+      <exercise><statement>
+          <p>
+              <m>\sim</m> defined on the set of all finite sets by <m>A\sim B</m> if and only if there exists a  \index{Equivalence Relations}  bijective function <m>f:A\rightarrow B</m>
+          </p>
+      </statement></exercise>
+  
+      <exercise><statement>
+          <p>
+              <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if, for a fixed <m>n\in \Z</m>, <m>\gcd(a,n) =\gcd(b,n)</m> (see Definition \ref{defgcd}).
+          </p>
+      </statement></exercise>
+  
+    </exercisegroup>
+</exercises>
+
+<aside>
+    <title>Ungrouped "Inline" Exercises</title>
+    <p>
+        This time the exercises appear but none of the titles get displayed. 
+    </p>  
+</aside>
+
+<inlineexercise>
+    <title>Some Equivalence Relations</title>
+    
+    <introduction>
+        <p>
+            Show that the following relations  <idx>Relations</idx>  <idx>Equivalence Relations</idx> are equivalence relations on the indicated sets:
+        </p>
+    </introduction>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\R</m> by <m>a\sim b</m> if and only if <m>|a| =|b|</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if both are even or both are odd.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if, for a fixed integer <m>n>1</m>, <m>a</m> and <m>b</m> have the same remainder when divided by <m>n</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all differentiable functions <m>\R \rightarrow \R</m>, where <m>f\sim g</m> if and only if <m>f'(x) =g'(x)</m> for all <m>x\in \R</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all functions<m>f:A\rightarrow B</m> by<m>f\sim g</m> if and only if<m>f(a)=g(a)</m> for some <em>fixed</em> <m>a\in A</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all triangles by <m>\triangle ABC \sim \triangle DEF</m> if and only if the two triangles are congruent. Would this relation still be an equivalence relation if we replaced `congruent' by `similar' ?
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            defined on <m>\R^3</m> by <m>P \sim Q</m> if and only if  <m>P-Q</m> is orthogonal to the vector <m>(1,1,1)</m>.
+        </p>    
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all finite sets by <m>A\sim B</m> if and only if there exists a  \index{Equivalence Relations}  bijective function <m>f:A\rightarrow B</m>
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if, for a fixed <m>n\in \Z</m>, <m>\gcd(a,n) =\gcd(b,n)</m> (see Definition ...).
+        </p>
+    </statement></task>
+
+</inlineexercise>
+
+
+<aside>
+    <title>Exercises as a Checkpoint</title>
+    <p>
+        These are kind of cute.  The exercises are hidden behind a carat that can be opened and closed.  They are automatically labeled "Checkpoint" and given a reference number.
+    </p>
+</aside>
+
+-->
+
+
+<exercise xml:id="eqclintro">
+    <title>Some Equivalence Relations Exercises</title>
+    
+    <introduction>
+        <p>
+            Show that the following relations  <idx>Relations</idx>  <idx>Equivalence Relations</idx> are equivalence relations on the indicated sets:
+        </p>
+    </introduction>
+    
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if, for a fixed <m>n\in \Z</m>, <m>\gcd(a,n) =\gcd(b,n)</m> (see Definition ...).
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all finite sets by <m>A\sim B</m> if and only if there exists a  \index{Equivalence Relations}  bijective function <m>f:A\rightarrow B</m>
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            defined on <m>\R^3</m> by <m>P \sim Q</m> if and only if  <m>P-Q</m> is orthogonal to the vector <m>(1,1,1)</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\R</m> by <m>a\sim b</m> if and only if <m>|a| =|b|</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if both are even or both are odd.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all differentiable functions <m>\R \rightarrow \R</m>, where <m>f\sim g</m> if and only if <m>f'(x) =g'(x)</m> for all <m>x\in \R</m>.
+        </p>
+    </statement></task>
+
+    <task xml:id="eqclintro-modulo"><statement>
+        <p>
+            <m>\sim</m> defined on <m>\Z</m> by <m>a\sim b</m> if and only if, for a fixed integer <m>n>1</m>, <m>a</m> and <m>b</m> have the same remainder when divided by <m>n</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all differentiable functions <m>\R \rightarrow \R</m>, where <m>f\sim g</m> if and only if <m>f'(x) =g'(x)</m> for all <m>x\in \R</m>.
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all triangles by <m>\triangle ABC \sim \triangle DEF</m> if and only if the two triangles are congruent. Would this relation still be an equivalence relation if we replaced `congruent' by `similar' ?
+        </p>
+    </statement></task>
+
+    <task><statement>
+        <p>
+            <m>\sim</m> defined on the set of all functions <m>f:A\rightarrow B</m> by <m>f\sim g</m> if and only if <m>f(a)=g(a)</m> for some <em>fixed</em> <m>a\in A</m>.
+        </p>
+    </statement></task>
+</exercise>
+
+<p>
+<example xml:id="exprepermutationprodcycles">
+    <title>Equivalence Relation Example</title>
+        <p>
+            Let <m>A</m> be a set and <m>f \colon A \rightarrow A</m> a <em>fixed</em> bijective function.  We set
+            <ol>
+                <li>
+                    <p>
+                       <m>f^0=id</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                       <m>f^n = \underbrace{f\circ f\circ \cdots \circ f}_{n \,\mbox {times}}</m>, and  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                       <m>f^{-n} = (f^n)^{-1}</m>, for all <m>n\in \N</m>, where <m>(f^n)^{-1}</m> is the inverse function of<m>f^n</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>
+            Consider the relation <m>\sim</m>on <m>A</m>by <m>a\sim b</m>if and only if <m>f^k(a) =b</m>, for some <m>k\in \Z</m>. We next show that <m>\sim</m> is an equivalence relation.
+        </p>
+        <p>
+            Let <m>x</m>, <m>y</m>, <m>z \in A</m>.
+        </p>
+        <dl>
+            <li>
+                <title><m>\sim</m> is reflexive:</title>
+                <p>
+                    In order to check reflexivity we need to prove that<m>x\sim x</m>. That is, we need to find a power<m>k</m> of<m>f</m> such that<m>f^k(x)=x</m>, but since<m>f^0</m> is the identity function then<m>f^0(x) = x</m>. It follows that<m>x \sim x</m>.
+                </p>
+            </li>
+            <li>
+                <title><m>\sim</m> is symmetric:</title>
+                <p>
+                    Suppose<m>x \sim y</m>.  This means that we know that there exists <m>k \in \Z</m> such that <m>f^k(x) = y</m> (definition of the relation).  In order to show that<m>y \sim x</m> we need to find a power of<m>f</m> such<m>f^r(y)=x</m>. Since<m>f^k</m> sends <m>x</m> to <m>y</m>, then the inverse function of <m>f^k</m> sends<m>y</m> back to <m>x</m> (the inverse function exists because <m>f</m> is bijective, and thus any composition of<m>f</m>'s is also bijective, in particular <m>f^k</m>). It follows that<m>(f^k)^{-1}(y)=x</m>. But, according to the definition above <m>(f^k)^{-1} = f^{-k}</m>. It follows that <m>f^{-k}(y) = x</m>. Since <m>k\in \Z</m> then so is <m>-k</m>, therefore <m>y \sim x</m>.
+                </p>
+            </li>
+            <li>
+                <title><m>\sim</m> is transitive:</title>
+                <p>
+                    Suppose <m>x \sim y</m> and <m>y \sim z</m>.  This means that there exist <m>k</m>, <m>l \in \Z</m> such that <m>f^k(x) = y</m> and <m>f^l(y) = z</m>.  Since
+                    <me>
+                        f^{l}f^{k} = \left( \underbrace{f\circ f\circ \cdots \circ f}_{l \,\mbox {times}} \right) \circ \left( \underbrace{f\circ f\circ \cdots \circ f}_{k \,\mbox {times}} \right) =  \underbrace{f\circ f\circ \cdots \circ f}_{k+l \,\mbox {times}}
+                    </me>
+                    then <m>f^{k+l}(x) = f^{l}f^{k}(x) = f^{l}\left( f^{k}(x) \right)=  f^{l}(y) = z</m>. Since <m>k,l\in \Z</m> then <m>k+l\in \Z</m>, and thus <m>x \sim z</m>.
+                </p>
+            </li>
+        </dl>
+</example>
+</p>
+
+<definition xml:id="def-EquivalenceClass">
+    <statement>
+        <p>
+            Let <m>R</m> be an equivalence relation on a set <m>A</m>.  For a fixed <m>x\in A</m>, we define the <em>(equivalence) class</em> of <m>x</m> as
+            <me>
+                [x] =\{ b\in A ; \ xRb   \}
+            </me>
+        </p>
+    </statement>
+</definition>
+
+<exercise xml:id="ex-number-of-equiv-classes">
+    <title>Counting Classes</title>
+    <introduction>
+        <p>
+            Let <m>\sim</m> be an equivalence relation on a set <m>A</m>.
+        </p>
+    </introduction>
+    <task xml:id="ex-number-of-equiv-classes-parta">
+        <statement>
+            <p>
+                Assume that <m>|A|=n \lt \infty</m> and that every equivalence class under <m>\sim</m> contains exactly <m>k</m> elements. Prove that <m>k \mid n</m>.
+            </p>
+        </statement>
+    </task>
+    <task xml:id="ex-number-of-equiv-classes-partb">
+        <statement>
+            <p>
+                How many equivalence classes are there in part (<xref ref="ex-number-of-equiv-classes-parta"/>)?
+            </p>
+        </statement>
+    </task>
+    <task xml:id="ex-number-of-equiv-classes-partc">
+        <statement>
+            <p>
+                Assume that <m>A=\Z</m> and that <m>\sim</m> is defined by:
+                <me>
+                    a\sim b  \text{ if and only if } a\equiv b \pmod n.
+                </me>
+                Prove that if <m>C_1</m> and <m>C_2</m> are (any) two equivalence classes of <m>\sim</m> then there is a bijective function <m>f \colon C_1\rightarrow C_2</m>.
+            </p>
+        </statement>
+    </task>
+</exercise>
+
+<p>
+    You may recognize the equivalence relation in Exercise <xref ref="eqclintro"/>, part <xref ref="eqclintro-modulo"/>, as congruence modulo <m>n</m>.  (Compare Exercise <xref ref="ex-number-of-equiv-classes"/>  part <xref ref="ex-number-of-equiv-classes-partc"/>). The equivalence classes in this case are often called <em>congruence classes</em>.  The congruence class of <m>0</m> consists of all the multiples of <m>n</m>, since
+    <me>
+        [0] = \{ b \in \Z ; \ 0 \sim b \} = \{ b \in \Z ; \ b \equiv 0 \pmod{n} \} = \{ b \in \Z ; \ n \mid b \} = \{ \ldots, -3n, -2n, -n, 0, n, 2n, 3n, 4n, \ldots\}.
+    </me>
+</p>
+<p>
+    Similarly, check for yourself that
+    <me>
+        [1] = \{ b \in \Z ; \ b \equiv 1 \pmod{n} \} = \{ \ldots, -2n+1, -n+1, 1, n+1, 2n + 1, \ldots\}
+    </me>.
+    The set of all distinct equivalence classes of <m>\sim</m> is
+    <me>
+        \{ [0], [1], [2], \ldots, [n-1] \},
+    </me>
+    which we usually call <m>\Z_n</m>.  See subsection \ref{zee-n-subsection}.
+    Note that every integer belongs to exactly one of these equivalence classes.  In other words, the equivalence classes of <m>\sim</m> form a partition of <m>\Z</m>.
+</p>
+
 
 </section>
